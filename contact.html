@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Studio Nine</title>
+    <meta name="description" content="Ready to start? Get a quote for your next premium website project.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Sora:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/custom.css">
+    <style>
+        input, select, textarea {
+            background: rgba(255, 255, 255, 0.03) !important;
+            border: 1px solid rgba(255, 255, 255, 0.08) !important;
+            color: white !important;
+            padding: 1rem !important;
+            border-radius: 0.75rem !important;
+            outline: none !important;
+            transition: all 0.3s ease !important;
+        }
+        input:focus, select:focus, textarea:focus {
+            border-color: var(--accent) !important;
+            background: rgba(255, 255, 255, 0.05) !important;
+        }
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: var(--muted);
+        }
+    </style>
+</head>
+<body>
+    <header class="fixed top-0 w-full z-50 glass">
+        <div class="container-max h-20 flex items-center justify-between">
+            <a href="index.html" class="text-2xl font-bold text-white font-sora">Studio Nine</a>
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+                <a href="index.html" class="text-muted hover:text-white">Home</a>
+                <a href="services.html" class="text-muted hover:text-white">Services</a>
+                <a href="process.html" class="text-muted hover:text-white">Process</a>
+                <a href="about.html" class="text-muted hover:text-white">About</a>
+                <a href="contact.html" class="text-white">Contact</a>
+            </nav>
+            <span class="text-xs text-muted font-bold tracking-widest uppercase">Response < 24h</span>
+        </div>
+    </header>
+
+    <main class="pt-32">
+        <section class="container-max py-20 grid lg:grid-cols-2 gap-20">
+            <div>
+                <h1 class="text-5xl font-bold text-white mb-6">Let's talk about <br> your business.</h1>
+                <p class="text-lg text-muted mb-12">Complete the form and we'll get back to you within one business day to discuss your project.</p>
+                
+                <div class="space-y-10">
+                    <div class="p-8 rounded-3xl glass">
+                        <h2 class="text-xl font-bold text-white mb-4">What happens next?</h2>
+                        <ul class="space-y-6 text-sm text-muted">
+                            <li class="flex gap-4"><span class="text-accent font-bold">01</span> <span>We review your requirements and research your industry.</span></li>
+                            <li class="flex gap-4"><span class="text-accent font-bold">02</span> <span>We schedule a 15-min discovery call to align goals.</span></li>
+                            <li class="flex gap-4"><span class="text-accent font-bold">03</span> <span>You receive a fixed-price proposal and timeline.</span></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="flex flex-col gap-2">
+                        <span class="text-[10px] uppercase font-bold tracking-widest text-muted">Direct Email</span>
+                        <a href="mailto:hello@studionine.com" class="text-2xl font-bold text-white hover:text-accent transition-colors underline decoration-accent/30 decoration-2">hello@studionine.com</a>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <form action="mailto:hello@studionine.com" method="GET" class="space-y-6">
+                    <input type="hidden" name="subject" value="New Project Inquiry — Studio Nine">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label>Full Name</label>
+                            <input type="text" name="name" required class="w-full" placeholder="John Doe">
+                        </div>
+                        <div>
+                            <label>Email Address</label>
+                            <input type="email" name="email" required class="w-full" placeholder="john@example.com">
+                        </div>
+                    </div>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label>Project Type</label>
+                            <select name="type" class="w-full">
+                                <option>Landing Page</option>
+                                <option>Authority Site (5+ Pages)</option>
+                                <option>Custom Ecosystem</option>
+                                <option>Branding Only</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label>Budget Range</label>
+                            <select name="budget" class="w-full">
+                                <option>$1,500 - $3,000</option>
+                                <option>$3,000 - $5,000</option>
+                                <option>$5,000+</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div>
+                        <label>Message</label>
+                        <textarea name="body" rows="5" required class="w-full" placeholder="Tell us about your project..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary w-full py-4 text-sm uppercase tracking-widest">Send Inquiry</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-12 border-t border-white/5 text-center">
+        <p class="text-muted text-xs">© Studio Nine. All rights reserved.</p>
+    </footer>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
