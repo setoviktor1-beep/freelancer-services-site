@@ -89,11 +89,21 @@ select option {
     color: white !important;
 }
 
-/* Social icons animation */
+
+/* Enhanced Social Icons */
 .social-icon {
-    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    font-size: 1.75rem !important; /* Didesnes piktogramos */
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    display: inline-block;
+}
+
+.social-icon:hover {
+    color: var(--accent) !important;
+    transform: scale(1.4) rotate(8deg) translateY(-8px); /* Padidejimas + pasisukimas + pakilimas */
+    filter: drop-shadow(0 0 8px var(--accent-glow));
 }
 .social-icon:hover {
     color: var(--accent);
     transform: scale(1.3) translateY(-5px);
 }
+
